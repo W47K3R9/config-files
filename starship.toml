@@ -1,0 +1,106 @@
+format = """
+[](fg:lighter_gray)\
+[](fg:lighter_gray)\
+[󰘧](bg:lighter_gray)\
+$username\
+[](fg:light_gray bg:lighter_gray)\
+$directory\
+[](bg:light_gray fg:medium_gray)\
+$git_branch\
+$git_status\
+[](bg:medium_gray fg:dark_gray)\
+$c\
+$rust\
+$python\
+[](bg:dark_gray fg:darker_gray)\
+$time\
+[](fg:darker_gray)\
+$line_break$character"""
+ 
+palette = 'gray_50'
+ 
+[palettes.gray_50]
+lighter_gray = "#bdbdbd"
+light_gray = "#9e9e9e"
+medium_gray = "#757575" 
+dark_gray = "#616161"
+darker_gray = "#424242"
+
+[palettes.blue_gray_50]
+lighter_gray = "#78909c"
+light_gray = "#607d8b"
+medium_gray = "#546e7a"
+dark_gray = "#455a64"
+darker_gray = "#37474f"
+ 
+[os]
+disabled = false
+style = "bg:lighter_gray fg:black"
+ 
+[username]
+show_always = true
+style_user = "bg:lighter_gray"
+style_root = 'bg:lighter_gray'
+format = '[ $user ]($style)'
+ 
+[directory]
+style = 'bg:light_gray'
+format = '[ $path ]($style)'
+truncation_length = 3
+truncation_symbol = "…/"
+ 
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"Developer" = "󰲋 "
+ 
+[git_branch]
+symbol = ""
+always_show_remote = true
+style = "bg:medium_gray fg:black"
+format = '[ $symbol $branch ]($style)'
+ 
+[git_status]
+style = "bg:medium_gray fg:black"
+format = '[($all_status$ahead_behind)]($style)'
+ 
+[c]
+symbol = ""
+style = "bg:dark_gray fg:black"
+format = '[ $symbol ($version) ]($style)'
+
+[cpp]
+symbol = ""
+style = "bg:dark_gray fg:black"
+format = '[ $symbol ($version) ]($style)'
+ 
+[rust]
+symbol = ""
+style = "bg:dark_gray fg:black"
+format = '[ $symbol ($version) ]($style)'
+
+[python]
+symbol = ""
+style = "bg:dark_gray fg:black"
+format = '[ $symbol ($version) ]($style)'
+ 
+[docker_context]
+symbol = ""
+style = "bg:dark_gray fg:black"
+format = '[ $symbol ($context) ]($style)'
+ 
+[time]
+disabled = false
+time_format = "%R"
+style = "fg:black bg:darker_gray"
+format = '[  $time ]($style)'
+ 
+[line_break]
+disabled = false
+ 
+[character]
+disabled = false
+success_symbol = '[󱞩](green)'
+error_symbol = '[](red)'

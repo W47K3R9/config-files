@@ -1,0 +1,46 @@
+## personal favorite light themes
+theme = "everforest_light"
+# theme = "catppuccin_latte"
+# theme = "papercolor-light"
+# theme = "onelight"
+# theme = "rose_pine_dawn"
+
+## personal favorite dark themes
+# theme = "everforest_dark"
+# theme = "ashen"
+# theme = "pop-dark"
+# theme = "gruvbox-material"
+# theme = "zed_onedark"
+
+[editor]
+line-number = "relative"
+rulers = [121]
+text-width = 120
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
+
+[editor.indent-guides]
+render = true
+
+[editor.auto-save]
+focus-lost = true
+
+[editor.statusline]
+left = ["mode", "spinner", "file-modification-indicator", "diagnostics"] 
+center = ["version-control"]
+right = ["register", "file-name", "file-type"] 
+mode.normal = "N"
+mode.insert = "I"
+mode.select = "V"
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 25 # this is the default value.
+wrap-at-text-width = true
+
+[editor.inline-diagnostics]
+cursor-line = "hint"
+other-lines = "error"

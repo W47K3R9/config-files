@@ -1,0 +1,38 @@
+font_family 0xProto Nerd Font Mono
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+font_size 16.0
+
+cursor_shape beam
+#: can be block, beam or underline.
+
+cursor_blink_interval 1 'ease'
+#: -1 is system default, 0 is off, >0 in seconds, limited by repaint_delay.
+#: supports easing functions 'linear', 'ease', 'ease-in', 'ease-out', 'ease-in-out', 'step-start' and 'step-end'
+
+copy_on_select yes
+repaint_delay 16
+#: in ms (defines the FPS)
+
+enable_audio_bell yes
+
+hide_window_decorations no
+remember_window_size  yes
+initial_window_width  640
+initial_window_height 400
+
+tab_bar_style separator
+tab_separator " ╎ "
+
+background_opacity 0.97
+background_blur 0
+dynamic_background_opacity yes
+
+#: OS specific tweaks
+macos_option_as_alt left
+
+# BEGIN_KITTY_THEME
+# Everforest Dark Medium
+include current-theme.conf
+# END_KITTY_THEME
