@@ -1,7 +1,7 @@
 format = """
 [](fg:lighter_gray)\
 [](fg:lighter_gray)\
-[󰘧](bg:lighter_gray)\
+[󰘧](bg:lighter_gray fg:black)\
 $username\
 [](fg:light_gray bg:lighter_gray)\
 $directory\
@@ -17,7 +17,7 @@ $time\
 [](fg:darker_gray)\
 $line_break$character"""
  
-palette = 'gray_50'
+palette = 'rose_pine_dawn'
  
 [palettes.gray_50]
 lighter_gray = "#bdbdbd"
@@ -32,15 +32,26 @@ light_gray = "#607d8b"
 medium_gray = "#546e7a"
 dark_gray = "#455a64"
 darker_gray = "#37474f"
- 
-[os]
-disabled = false
-style = "bg:lighter_gray fg:black"
+
+[palettes.everforest]
+lighter_gray = "#f85552" # red
+light_gray = "#f57d26"   # orange
+medium_gray = "#dfa000"  # yellow
+dark_gray = "#35a77c"    # green
+darker_gray = "#3a94c5"  # blue
+
+[palettes.rose_pine_dawn]
+lighter_gray = "#b4637a" # dark purple
+light_gray = "#d7827e"   # light purple
+medium_gray = "#ea9d34"  # yellow
+dark_gray = "#56949f"    # light blue
+darker_gray = "#286983"  # dark blue
+#907aa9
  
 [username]
 show_always = true
-style_user = "bg:lighter_gray"
-style_root = 'bg:lighter_gray'
+style_user = 'bg:lighter_gray fg:black'
+style_root = 'bg:lighter_gray fg:black'
 format = '[ $user ]($style)'
  
 [directory]
@@ -59,11 +70,11 @@ truncation_symbol = "…/"
 [git_branch]
 symbol = ""
 always_show_remote = true
-style = "bg:medium_gray fg:black"
+style = "bg:medium_gray"
 format = '[ $symbol $branch ]($style)'
  
 [git_status]
-style = "bg:medium_gray fg:black"
+style = "bg:medium_gray"
 format = '[($all_status$ahead_behind)]($style)'
  
 [c]
