@@ -1,9 +1,9 @@
 ## personal favorite light themes
-theme = "everforest_light"
+# theme = "everforest_light"
 # theme = "catppuccin_latte"
 # theme = "papercolor-light"
 # theme = "onelight"
-# theme = "rose_pine_dawn"
+theme = "rose_pine_dawn"
 
 ## personal favorite dark themes
 # theme = "everforest_dark"
